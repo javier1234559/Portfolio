@@ -1,0 +1,329 @@
+
+@import url("./base.css");
+@import url("./gird.css");
+ /* ======================================== MAIN CODE CSS ========================================= */
+
+ /*==============  Header */
+ .nav__mobile{
+    display: none;
+}
+ .header {
+  width: 100%;
+  position: fixed;
+  height: var(--header-height);
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.nav__logo{
+    font-size: 2rem;
+}
+.nav__logo:hover{
+    color: var(--first-color-alt);
+    color: var(--first-color-lighter);
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav__menu a {
+    position: relative;
+    margin: 0 1rem;
+}
+.nav__menu a::after{
+    content: "" ;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    width: 0 ;
+    bottom: -40%;
+    transition: width .5s ease;
+}
+.nav__menu a:hover::after {
+    background-color: #fff;
+    padding:1px;
+    width: 60px;
+}
+.nav-on-mobile{
+    display: none;
+}
+/*  =========================== Main */
+
+/* Home */
+#home{
+    overflow: hidden;
+}
+
+main section:first-of-type{
+    margin-top: var(--header-height);
+    background-color: #fff;
+    height: 99vh;
+    color: var( --text-color-black);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-semi-bold);
+    position: relative;
+}
+.z-index-section1 {
+    position: absolute;
+    z-index: 2;
+}
+main section:nth-child(3n){
+    background-color: #fff;
+
+}
+.home-img{
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.home-title{
+    box-shadow: 0.6rem 0.6rem 1.2rem #d2dce9 ;
+}
+.home-title .big-title{
+    color: var(--text-color-black);
+    font-size: var(--large-font-size);
+    
+}
+.big-title span:hover{  
+    color: var(--first-color);
+}
+.home-title .home-title-btn{
+    padding: 10px 10px ;
+    width: 150px;
+    background-color: var(--first-color);
+    color: var(--text-color);
+    font-size: var(--h3-font-size);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.blob-shape-size{
+    background-color: var(--body-color);
+    opacity: 0.8;
+    z-index: 0;
+    top: 10%;
+    left: -10%;
+    position: absolute;
+    height: 500px;
+    width: 900px;
+}
+
+/* About */
+.about{
+    padding: 60px 0 ;
+}
+.about-content-img{
+    max-width:900px;
+    margin-right: 60px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.about-content-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.about-content-info{
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.about-content-info p {
+    font-size: var(--small-font-size);
+}
+.about-content-info button{
+    padding: 10px 10px ;
+    width: 150px;
+    background-color: var(--first-color);
+    color: var(--text-color);
+    font-size: var(--h3-font-size);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-title{
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+
+/* Team */
+
+.project{
+    padding: 60px 0 ;
+}
+
+.user{
+    background-color: var(--text-color-black);
+    background-color: #000;
+    border-radius: 20px;
+}
+.card {
+    width: 330px;
+    position: relative;
+    height: 400px;
+    margin: 20px;
+    background-color: #f2f3f7;
+    box-shadow: 0.6rem 0.6rem 1.2rem #d2dce9 ;
+                /* 0.6rem 0.6rem 1.2rem #d2dce9 ;   */
+
+}
+.card:hover{
+    box-shadow: 0.6rem 0.6rem 1.2rem #d2dce9 ,
+    0.6rem 0.6rem 1.2rem #d2dce9 ;  
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+    background: var(--first-color);
+}
+.user-img{
+  height: 180px ;
+  width: 180px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid ;
+    margin: 0 auto;
+
+}
+.user-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.user-content{
+    margin-top: 30px;
+    text-align: center;
+}
+.user-content span {
+    color: var(--text-color-black) ;
+    font-size: var(--h2-5-font-size);
+}
+.user-content h3 {
+    color: var(--text-color-black) ;
+    font-size: var(--h3-5-font-size);
+    margin-bottom: 0;
+}
+
+.user-icon{
+    color: var(--text-color-black) ;
+    font-size: var(--h2-5-font-size);
+}
+.user-icon i{
+    margin-left: 10px;
+}
+.user-icon a:nth-of-type(1){
+    color: #0077B5;
+}
+.user-icon a:nth-of-type(2){
+    color: #0098F6;
+}
+.user-icon a:nth-of-type(3){
+    color: #000;
+}
+.team{
+    padding-bottom: 150px;
+}
+.team .section-title{
+    padding-top: 30px ;
+}
+/* Project  */
+.project-card{
+    cursor: pointer;
+    height: 500px;
+    /* background-color: #0077B5; */
+}
+
+.swiper {
+    width: 1000px;
+}
+
+.swiper-slide img{
+    max-width: 100%;
+    height:auto;
+}
+.swiper-slide {
+    transition: 250ms all;
+   
+}
+.swiper-slide:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+/* Background */
+.back-ground{
+    background-image: url("../img/river.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay; 
+    background-attachment: fixed;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contact */
+
+.contact-with-us-content{
+    line-height: normal;
+}
+.contact-with-us-content h3{
+    /* font-family: 'Lora', serif; */
+    margin-bottom: 10px;
+}
+.contact-with-us-content p{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: var(--h3-5-font-size);
+}
+.contact-with-us i{
+    margin-right: 10px;
+    color: #000;
+}
+
+.send-a-request h3{
+    /* font-family: 'Lora', serif; */
+    margin-bottom: 10px;
+}
+.send-a-request label{
+    display: block;
+    font-size: 12px;
+}
+.send-a-request input{
+    font-family: 'Lora',serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: medium;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 12px;
+}
+.send-a-request textarea{
+    font-family: 'Lora',serif;
+    font-style: italic;
+    font-size: var(--h3-font-size);
+    border-radius: 3px;
+    width: 100%;
+}
+.send-a-request button{
+    border-radius: 3px;
+    padding: 5px 20px;
+    background-color: var(--first-color);
+    color: #fff;
+    margin: 10px 0 ;
+}
