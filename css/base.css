@@ -63,17 +63,21 @@
 }
 
 html{
+    -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
 }
-body{
-    margin: 0 0 var(--header-height) 0;
+body{ 
+    /* Bug the body ko om het the html */
+    height: 100vh;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color-dark);
     color: var(--text-color);
-    
+ 
 }
-
+.test{
+    overflow: hidden;
+}
 h1,h2,h3{
     color: var(--white-color);
     font-weight: var(--font-semi-bold);
@@ -154,7 +158,9 @@ textarea{
 }
 
 /* ============================ LAYOUT ==================================== */
-
+html{
+   
+}
 header,
 section,
 footer{
@@ -163,7 +169,10 @@ footer{
 section{
     min-height: 400px;
 }
-
+main{
+    margin: 0 0 var(--header-height) 0;
+    
+}
 .wide{
    width: min(90%,70.5rem);
    margin-inline: auto;

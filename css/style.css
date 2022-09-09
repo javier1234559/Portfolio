@@ -57,17 +57,18 @@
 
 /* Home */
 #home{
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
 }
 
 main section:first-of-type{
     margin-top: var(--header-height);
     background-color: #fff;
-    height: 99vh;
+    height: 600px;
+    overflow: hidden;
     color: var( --text-color-black);
     font-size: var(--big-font-size);
     font-weight: var(--font-semi-bold);
-    position: relative;
 }
 .z-index-section1 {
     position: absolute;
@@ -167,7 +168,7 @@ main section:nth-child(3n){
     border-radius: 20px;
 }
 .card {
-    width: 330px;
+    width: 330px;   
     position: relative;
     height: 400px;
     margin: 20px;

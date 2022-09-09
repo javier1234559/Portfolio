@@ -1,21 +1,21 @@
 
-    /* Tạo GRID */
+/* Tạo GRID */
 .grid{
     width: 100%;
     padding: 0;
 }
 
 .wide{
-   max-width: 1200px;
-   margin: 0 auto;
-   display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .row{
-   display: flex;
-   flex-wrap: wrap;
-   margin-left: -12px;
-   margin-right: -12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
 
 .col{
@@ -335,21 +335,20 @@
         margin-left: 91.66667%;
     }
 
-
 }
 
 
 /*Pc low resolution  */
 @media (min-width: 1024px) and (max-width:1200px){
-   .wide{
-       width: 960px;
-   }
-   .row{
-       margin-left:-12px;
-       margin-right:-12px;
-   }
-   .col{
-       padding-left: 12px ;
-       padding-right: 12px;
-   }
+    .wide{
+        width: 960px;
+    }
+    .row{
+        margin-left:-12px;
+        margin-right:-12px;
+    }
+    .col{
+        padding-left: 12px ;
+        padding-right: 12px;
+    }
 }

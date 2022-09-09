@@ -5,3 +5,6 @@ window.addEventListener('load',()=>{
     loadBegin.addEventListener('transitionend', () => loadBegin.remove());
     // console.log(loadBegin);
 });
+
+
+    
